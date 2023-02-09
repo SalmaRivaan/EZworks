@@ -31,6 +31,7 @@ const ClientContent = ({ setClient, selectClient }) => {
             <select>
                 {
                     data.map((client, index) => {
+        
                         return (
                             <option key={index+1}>{client.reg_date}</option>
                         )
