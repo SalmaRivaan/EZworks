@@ -14,9 +14,9 @@ const MainContent = ({ client }) => {
             <nav>
                 <ul >
                     
-                    <li  className={`${activeNav.entities && "active"}`} onClick={() => setActiveNav({ entities: true })}>ENTITIES</li>
-                    <li className={`${activeNav.invoice && "active"}`} onClick={() => setActiveNav({ invoice: true })}>INVOICE CODES</li>
-                    <li className={`${activeNav.users && "active"}`} onClick={() => setActiveNav({ users: true })}>USERS</li>
+                    <li  key="entities" className={`${activeNav.entities && "active"}`} onClick={() => setActiveNav({ entities: true })}>ENTITIES</li>
+                    <li  key="invoice" className={`${activeNav.invoice && "active"}`} onClick={() => setActiveNav({ invoice: true })}>INVOICE CODES</li>
+                    <li key="users" className={`${activeNav.users && "active"}`} onClick={() => setActiveNav({ users: true })}>USERS</li>
                 </ul>
             </nav>
             <div className='main-content'>
